@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>myMap</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- This is the mapbox links -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+
+    <!-- google fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <!-- myChart links -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<div id="navbar">
+    <div id="logo">myMappo</div>
+</div>
+
+<div class="flex-container">
+    <div id="mapContainer">
+        <div id='map' style='width: 100%; height: 100%;'></div>
+    </div>
+
+    <div id="menuContainer">
+        <div class="menuFlex-container">
+            <div>Enter Keyword(s)</div>
+            <div><input type="text" id="inputField"></div>
+            <div>Select State</div>
+            <div><select name="states" id="states_field">
+                <option value="All">All</option>
+                <option value="Alabama">Alabama</option>
+                <option value="Alaska">Alaska</option>
+                <option value="Arizona">Arizona</option>
+                <option value="Arkansas">Arkansas</option>
+                <option value="California">California</option>
+                <option value="Colorado">Colorado</option>
+                <option value="Connecticut">Connecticut</option>
+                <option value="Delaware">Delaware</option>
+                <option value="Florida">Florida</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Hawaii">Hawaii</option>
+                <option value="Idaho">Idaho</option>
+                <option value="Illinois">Illinois</option>
+                <option value="Indiana">Indiana</option>
+                <option value="Iowa">Iowa</option>
+                <option value="Kansas">Kansas</option>
+                <option value="Kentucky">Kentucky</option>
+                <option value="Louisiana">Louisiana</option>
+                <option value="Maine">Maine</option>
+                <option value="California">California</option>
+                <option value="Colorado">Colorado</option>
+                <option value="Connecticut">Connecticut</option>
+                <option value="Delaware">Delaware</option>
+                <option value="Florida">Florida</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Hawaii">Hawaii</option>
+                <option value="Idaho">Idaho</option>
+                <option value="Illinois">Illinois</option>
+                <option value="Maryland">Maryland</option>
+                <option value="Massachusetts">Massachusetts</option>
+                <option value="Michigan">Michigan</option>
+                <option value="Minnesota">Minnesota</option>
+                <option value="Mississippi">Mississippi</option>
+                <option value="Missouri">Missouri</option>
+            </select></div>
+            <div><input type="submit" id="button" onclick="newLocation(4)"></div><!---calls the function and grabs the location selected-->
+
+            <div class="menuFlex-container2">
+                <div>RESULTS 2 </div>
+                <div></div>
+            </div>
+            <div class="menuFlex-container2">
+                <div>Avg rent for 2bd apartment:</div>
+                <div id="html_rentTotal"></div>
+                <div id = div1>
+                    <canvas id="myChart" style="width:98%;max-width:700px"></canvas>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+    </div>
+</div>
+
+<div id="footer">Made by Omar Dumet ©2022</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
