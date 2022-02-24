@@ -1,0 +1,87 @@
+body{
+    margin: 0px;
+    color: #d5d5d5;
+    background-color: rgb(0, 0, 0);
+    font-family: 'Source Code Pro', monospace;
+    font-size: 18px;
+}
+
+#navbar{
+    height: 40px;
+    padding: 10px;
+    line-height: 40px;
+}
+
+#logo{
+    line-height: 30px;
+    font-size: large;
+    font-weight: bold;
+    color: #e0e0e0;
+
+    font-size: 24px;
+}
+
+#button,#states,#inputField{
+    width: 70%;
+    height: 3vh;
+    font-size: 16px;
+}
+#button{
+    background-color: rgba(23, 23, 23, 0);
+    border-color: rgb(255, 255, 255);
+    border-width: thin;
+    box-shadow: none;
+    color: #d5d5d5;
+    padding: 6px 0;
+    line-height: 6px;
+
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(7, 7, 7);
+    padding: 11px;
+    height: 85vh;
+}
+
+#mapContainer{
+    width: 70%;
+    background-color: rgba(0, 0, 255, 0);
+}
+
+#menuContainer{
+    width: 30%;
+    height: 100%;
+    background-color: rgba(247, 0, 255, 0);
+    text-align: center;
+    margin-left: 11px;
+
+}
+
+.menuFlex-container{
+    display: flex;
+    flex-flow: column;
+    margin: 5px;
+    background-color: rgba(255, 255, 255, 0);
+    height: 99%;
+
+}
+.menuFlex-container div{
+    margin: 5px 0;
+
+
+}
+
+.menuFlex-container2{
+    display: flex;
+    flex-flow: column;
+    margin: 5px;
+    padding: 20px 0;
+    background-color: rgba(222, 205, 73, 0);
+    height: 50%;
+}
+
+#footer{
+    text-align: center;
+}
