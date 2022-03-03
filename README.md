@@ -16,7 +16,8 @@
 ![Screen Shot 2022-02-26 at 9 25 09 PM (2)](https://user-images.githubusercontent.com/69431793/155865750-930f0e44-6946-4718-9089-e0203ed0cfbf.png)
 
 #mobile capability 
-<img width="1440" alt="pic1" src="https://user-images.githubusercontent.com/69431793/156506217-ade6f2f2-f0aa-4daa-9d3a-7040cc1c1010.png">
+
+![pioc1](https://user-images.githubusercontent.com/69431793/156506714-1a9f16a9-9244-4ed9-9fd7-6a8fcef15903.png)
 
 ![pic2](https://user-images.githubusercontent.com/69431793/156506221-6b0ebd87-b8c8-4b74-9738-28c60260919b.png)
 
