@@ -11,9 +11,6 @@ body{
     flex-flow: row;
     background-color: rgba(9, 9, 9, 0.29);
     justify-content: space-between;
-
-
-
 }
 
 #logo{
@@ -26,14 +23,9 @@ body{
     align-items: center;
     background-color: rgba(0, 255, 255, 0);
     padding: 0 40px 0 0;
-
 }
 
-#states,#inputField,#inputField2{
-    width: 70%;
-    height: 3vh;
 
-}
 
 /*
 #button{
@@ -56,6 +48,7 @@ body{
     height: 48px;
     background-color: rgb(255, 255, 255);
     border: 1px solid #1a1a1a;
+    width: 70%;
 
     overflow: hidden;
     transition: all 100ms ease-in-out;
@@ -74,7 +67,6 @@ body{
     outline: none;
     cursor: pointer;
     font-size: 14px;
-    font-weight: bold;
     line-height: 1;
     border-radius: 10px;
     transition-property: background-color, border-color, color, box-shadow, filter;
@@ -119,8 +111,6 @@ body{
     padding-top: 40px;
     font-weight: bold;
     color: white;
-
-
 }
 
 .menuFlex-container{
@@ -128,21 +118,15 @@ body{
     flex-flow: column;
     margin: 5px;
     background-color: rgba(255, 255, 255, 0);
-
-
 }
 .menuFlex-container div{
     margin: 5px 0;
-
-
 }
 
 .dataContainerMain{
     display: flex;
     flex-flow: row;
     background-color: rgb(255, 255, 255);
-
-
 }
 
 .dataContainer{
@@ -209,7 +193,7 @@ body{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: #282828;
     -webkit-transition: .4s;
     transition: .4s;
 }
@@ -221,10 +205,11 @@ body{
     width: 26px;
     left: 4px;
     bottom: 4px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     -webkit-transition: .4s;
     transition: .4s;
 }
+
 
 input:checked + .slider {
     background-color: #2196F3;
@@ -287,3 +272,77 @@ input:checked + .slider:before {
     -webkit-box-shadow   : 0px 0px 5px 0px rgba(164, 164, 164, 1);
     box-shadow           : 0px 0px 5px 0px rgba(164, 164, 164, 1);
 }
+
+
+/*mobile specs*/
+@media only screen and (max-width: 699px){
+    .flex-container {
+        flex-direction: column;
+        background-color: rgb(255, 255, 255);
+        padding: 6px;
+        height: 100%;
+    }
+
+    #mapContainer{
+        width: 100%;
+        height: 400px;
+        /*background-color: rgb(162, 255, 0);*/
+    }
+    #map{
+        height: 100%;
+    }
+
+
+
+    #menuContainer{
+        width: auto;
+        padding: 10px;
+       /* background-color: rgba(89, 222, 222, 0.84);*/
+        margin: 0;
+
+
+    }
+
+    .menuFlex-container{
+        margin: 0;
+        background-color: rgba(138, 43, 226, 0);
+    }
+    .menuFlex-container div{
+        background-color: rgba(0, 0, 255, 0);
+        margin: 1px;
+    }
+    #button {
+        margin: 4px;
+    }
+
+    .dataContainerMain{
+        flex-flow: column;
+        background-color: rgb(255, 255, 255);
+        padding: 6px;
+    }
+
+    .dataContainer{
+        width: auto;
+        /*background-color: rgb(61, 147, 65);*/
+        margin: 2px 0;
+        color: #ffffff;
+        font-size: 5vh;
+
+    }
+    #costofLivingBody{
+        font-size: 2vh !important;
+    }
+
+    #table{
+        /*background-color: #2196F3;*/
+
+    }
+    #table table{
+        word-break: break-word;
+        font-size: 2.5vh;
+
+    }
+
+
+
+    }

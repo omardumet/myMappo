@@ -1,5 +1,34 @@
 
-
+const secondPanelHTML = '<div class="dataContainer">\n' +
+    '    <div id="html_rentTotalTitle" style="margin-top: 15px"></div>\n' +
+    '    <div id = div1>\n' +
+    '\n' +
+    '        <canvas id="myChart"></canvas>\n' +
+    '    </div>\n' +
+    '</div>\n' +
+    '<div class="dataContainer">\n' +
+    '    <div><p id="jobName"></p></div><!-- This is job name plus state\'s name-->\n' +
+    '    <div id="avgsalarayHTML"></div><!-- This is salary number -->\n' +
+    '\n' +
+    '\n' +
+    '\n' +
+    '</div>\n' +
+    '<div class="dataContainer">\n' +
+    '    <div id="costofLivingTitle" style="margin-top: 15px"></div>\n' +
+    '    <div id="pop">\n' +
+    '        <p>The total of all the cost of living categories weighted subjectively as follows:\n' +
+    '            housing (30%), food and groceries (15%), transportation (10%), utilities (6%),\n' +
+    '            health care (7%), and miscellaneous expenses such as clothing, services,\n' +
+    '            and entertainment (32%). State and local taxes are not included in any category.</p>\n' +
+    '    </div>\n' +
+    '    <div id="costofLivingBody" style="font-size: 12px; font-weight: lighter;padding: 0 10px"></div>\n' +
+    '    <div id="costofLivingBody2" style="margin-top: 18px;"></div>\n' +
+    '    <div id="table" style="margin-top: 25px"></div>\n' +
+    '\n' +
+    '    <div>\n' +
+    '\n' +
+    '    </div>\n' +
+    '</div>';
 
 
 mapboxgl.accessToken = 'pk.eyJ1Ijoib21hcmR1bWV0bzciLCJhIjoiY2t6N253NG9yMTdsNDJvbzB6aWV6OWQ0dSJ9.6vZue9DQDXUsVG5odDqjUw';
@@ -66,6 +95,7 @@ function errorLocation(){
 
 
    function newLocation(zoom){
+
     let state_name,average,colNum;
     let state = document.getElementById('inputField2').value;
     state.toLowerCase();
@@ -127,8 +157,10 @@ function errorLocation(){
                 .then(r => createMap(state, zoom, array));
             break;
 
-        default:alert("Please, enter valid state name.");//if user does not enter state name correctly
+        default:alert("Please, enter valid state name.")
+            return;//if user does not enter state name correctly it stops flow of execution
     }
+       document.getElementById('dcm').innerHTML =secondPanelHTML;//adds 2nd panel with info
 
     //CALLS FETCH WITH THE INFO..THEN GFETCH CALLS CREATE MAP
 
@@ -150,6 +182,7 @@ function errorLocation(){
 
 let average_salary;
 async function myfetchFunc2(state_name,colNum){//gets average job salary with api
+
     document.getElementById('avgsalarayHTML').innerText = '';
     let jobNameTemp =document.getElementById('inputField').value;
 
