@@ -98,12 +98,12 @@ function errorLocation(){
 
     let state_name,average,colNum;
     let state = document.getElementById('inputField2').value;
-    state.toLowerCase();
 
+       console.log(state + "test test");
 
     switch (state) {
 
-        case 'alaska':
+        case 'Alaska':
             state = [-153.369141, 66.160507];
             state_name = "Alaska";
             average = 1200;
@@ -116,7 +116,7 @@ function errorLocation(){
             })*/
 
             break;
-        case 'alabama':
+        case 'Alabama':
             state = [-86.902298, 32.318230];
             state_name = "Alabama";
             average = 1200;
@@ -124,7 +124,7 @@ function errorLocation(){
             myfetchFunc(state_name)
                 .then(r => createMap(state, zoom, array));
             break;
-        case 'arizona':
+        case 'Arizona':
             state = [-111.093735, 34.048927];
             state_name = "Arizona";
             average = 1250;
@@ -132,7 +132,7 @@ function errorLocation(){
             myfetchFunc(state_name)
                 .then(r => createMap(state, zoom, array));
             break;
-        case 'arkansas':
+        case 'Arkansas':
             state = [-92.199997, 34.799999];
             state_name = "Arkansas";
             average = 1350;
@@ -140,7 +140,7 @@ function errorLocation(){
             myfetchFunc(state_name)
                 .then(r => createMap(state, zoom, array));
             break;
-        case 'california':
+        case 'California':
             state = [-119.417931, 36.778259];
             state_name = "California";
             average = 2800;
@@ -148,11 +148,363 @@ function errorLocation(){
             myfetchFunc(state_name)
                 .then(r => createMap(state, zoom, array));
             break;
-        case 'colorado':
+        case 'Colorado':
             state = [-105.358887, 39.113014];
             state_name = "Colorado";
             average = 2400;
             colNum = 166.1;
+            myfetchFunc(state_name)
+                .then(r => createMap(state, zoom, array));
+            break;
+        case 'Connecticut':
+            state = [-72.699997, 41.599998];
+            state_name = "Connecticut";
+            average = 1733;
+            colNum = 111.8;
+            myfetchFunc(state_name)
+                .then(r => createMap(state, zoom, array));
+            break;
+        case 'Delaware':
+            state = [-75.500000, 39.000000];
+            state_name = "Delaware";
+            average = 1607;
+            colNum = 102.5;
+            myfetchFunc(state_name)
+                .then(r => createMap(state, zoom, array));
+            break;
+        case 'Florida':
+            state = [ -81.760254, 27.994402];
+            state_name = "Florida";
+            average = 1099;
+            colNum = 103.1;
+            myfetchFunc(state_name)
+                .then(r => createMap(state, zoom, array));
+            break;
+        case 'Georgia':
+            state = [ -83.441162, 33.247875];
+            state_name = "Georgia";
+            average = 1661;
+            colNum = 94.5;
+            myfetchFunc(state_name)
+                .then(r => createMap(state, zoom, array));
+            break;
+        case 'Hawaii':
+            state = [ -155.844437, 19.741755];
+            state_name = "Hawaii";
+            average = 2042;
+            colNum = 168.9;
+            myfetchFunc(state_name)
+                .then(r => createMap(state, zoom, array));
+            break;
+        case 'Idaho':
+            state = [ -114.742043, 44.068203];
+            state_name = "Idaho";
+            average = 665;
+            colNum = 105.5;
+            myfetchFunc(state_name)
+                .then(r => createMap(state, zoom, array));
+            break;
+        case 'Illinois':
+            state = [ -89.000000, 40.000000];
+            state_name = "Illinois";
+            average = 837;
+            colNum = 93.7;
+            myfetchFunc(state_name)
+                .then(r => createMap(state, zoom, array));
+            break;
+        case 'Indiana':
+            state = [ -86.126976, 40.273502];
+            state_name = "Indiana";
+            average = 1108;
+            colNum = 166.1;
+            myfetchFunc(state_name)
+                .then(r => createMap(state, zoom, array));
+            break;
+        case 'Iowa':
+            state = [ -93.581543, 42.032974];
+            state_name = "Iowa";
+            average = 982;
+            colNum = 69.5;
+            myfetchFunc(state_name)
+                .then(r => createMap(state, zoom, array));
+            break;
+        case 'Kansas':
+            state = [ -98.000000, 38.500000];
+            state_name = "Kansas";
+            average = 977;
+            colNum = 83.1;
+            myfetchFunc(state_name)
+                .then(r => createMap(state, zoom, array));
+            break;
+        case 'Kentucky':
+            state = [ -84.270020, 37.839333];
+            state_name = "Kentucky";
+            average = 1158;
+            colNum = 82.3;
+            myfetchFunc(state_name)
+                .then(r => createMap(state, zoom, array));
+            break;
+        case 'Louisiana':
+            state = [ -92.329102, 30.391830];
+            state_name = "Louisiana";
+            average = 1201;
+            colNum = 89.9;
+            myfetchFunc(state_name)
+                .then(r => createMap(state, zoom, array));
+            break;
+        case 'Maine':
+            state = [ -68.972168, 45.367584];
+            state_name = "Maine";
+            average = 850;
+            colNum = 159.1;
+            myfetchFunc(state_name)
+                .then(r => createMap(state, zoom, array));
+            break;
+        case 'Maryland':
+            state = [ -76.641273, 39.045753];
+            state_name = "Maryland";
+            average = 838;
+            colNum = 113.0;
+            myfetchFunc(state_name)
+                .then(r => createMap(state, zoom, array));
+            break;
+        case 'Massachusetts':
+            state = [ -71.382439, 42.407211];
+            state_name = "Massachusetts";
+            average = 3100;
+            colNum = 131.1;
+            myfetchFunc(state_name)
+                .then(r => createMap(state, zoom, array));
+            break;
+        case 'Michigan':
+            state = [ -84.506836, 44.182205];
+            state_name = "Michigan";
+            average = 1023;
+            colNum = 87.8;
+            myfetchFunc(state_name)
+                .then(r => createMap(state, zoom, array));
+            break;
+        case 'Minnesota':
+            state = [ -94.636230, 46.392410];
+            state_name = "Minnesota";
+            average = 1658;
+            colNum = 97.2;
+            myfetchFunc(state_name)
+                .then(r => createMap(state, zoom, array));
+            break;
+        case 'Mississippi':
+            state = [ -90.000000, 33.000000];
+            state_name = "Mississippi";
+            average = 968;
+            colNum = 83.3;
+            myfetchFunc(state_name)
+                .then(r => createMap(state, zoom, array));
+            break;
+        case 'Missouri':
+            state = [ -92.603760, 38.573936];
+            state_name = "Missouri";
+            average = 746;
+            colNum = 66.1;
+            myfetchFunc(state_name)
+                .then(r => createMap(state, zoom, array));
+            break;
+        case 'Montana':
+            state = [ -109.533691, 46.965260];
+            state_name = "Montana";
+            average = 1780;
+            colNum = 100.0;
+            myfetchFunc(state_name)
+                .then(r => createMap(state, zoom, array));
+            break;
+        case 'Nebraska':
+            state = [ -100.000000, 41.500000];
+            state_name = "Nebraska";
+            average = 1009;
+            colNum = 11.5;
+            myfetchFunc(state_name)
+                .then(r => createMap(state, zoom, array));
+            break;
+        case 'Nevada':
+            state = [ -117.224121, 39.876019];
+            state_name = "Nevada";
+            average = 1506;
+            colNum = 109.7;
+            myfetchFunc(state_name)
+                .then(r => createMap(state, zoom, array));
+            break;
+        case 'New Hampshire':
+            state = [ -71.500000, 44.000000];
+            state_name = "New Hampshire";
+            average = 1077;
+            colNum = 105.8;
+            myfetchFunc(state_name)
+                .then(r => createMap(state, zoom, array));
+            break;
+        case 'New Jersey':
+            state = [ -74.871826, 39.833851];
+            state_name = "New Jersey";
+            average = 1407;
+            colNum = 119.8;
+            myfetchFunc(state_name)
+                .then(r => createMap(state, zoom, array));
+            break;
+        case 'New Mexico':
+            state = [ -106.018066, 34.307144];
+            state_name = "New Mexico";
+            average = 1235;
+            colNum = 88.4;
+            myfetchFunc(state_name)
+                .then(r => createMap(state, zoom, array));
+            break;
+        case 'New York':
+            state = [ -73.935242, 40.730610];
+            state_name = "New York";
+            average = 2006;
+            colNum = 168.6;
+            myfetchFunc(state_name)
+                .then(r => createMap(state, zoom, array));
+            break;
+        case 'North Carolina':
+            state = [ -80.793457, 35.782169];
+            state_name = "North Carolina";
+            average = 1306;
+            colNum = 91.0;
+            myfetchFunc(state_name)
+                .then(r => createMap(state, zoom, array));
+            break;
+        case 'North Dakota':
+            state = [ -100.437012, 47.650589];
+            state_name = "North DakotaN";
+            average = 748;
+            colNum = 88.6;
+            myfetchFunc(state_name)
+                .then(r => createMap(state, zoom, array));
+            break;
+        case 'Ohio':
+            state = [ -82.996216, 40.367474];
+            state_name = "Ohio";
+            average = 1164;
+            colNum = 82.6;
+            myfetchFunc(state_name)
+                .then(r => createMap(state, zoom, array));
+            break;
+        case 'Oklahoma':
+            state = [ -96.921387, 36.084621];
+            state_name = "Oklahoma";
+            average = 950;
+            colNum = 82.2;
+            myfetchFunc(state_name)
+                .then(r => createMap(state, zoom, array));
+            break;
+        case 'Oregon':
+            state = [ -120.500000, 44.000000];
+            state_name = "Oregon";
+            average = 1060;
+            colNum = 114.3;
+            myfetchFunc(state_name)
+                .then(r => createMap(state, zoom, array));
+            break;
+        case 'Pennsylvania':
+            state = [ -77.194527, 41.203323];
+            state_name = "Pennsylvania";
+            average = 1117;
+            colNum = 94.6;
+            myfetchFunc(state_name)
+                .then(r => createMap(state, zoom, array));
+            break;
+        case 'Rhode Island':
+            state = [ -71.742332, 41.742325];
+            state_name = "Rhode Island";
+            average = 2318;
+            colNum = 112.5;
+            myfetchFunc(state_name)
+                .then(r => createMap(state, zoom, array));
+            break;
+        case 'South Carolina':
+            state = [ -81.163727, 33.836082];
+            state_name = "South Carolina";
+            average = 941;
+            colNum = 89.3;
+            myfetchFunc(state_name)
+                .then(r => createMap(state, zoom, array));
+            break;
+        case 'South Dakota':
+            state = [ -100.000000, 44.500000];
+            state_name = 'South Dakota';
+            average = 995;
+            colNum = 192.9;
+            myfetchFunc(state_name)
+                .then(r => createMap(state, zoom, array));
+            break;
+        case 'Tennessee':
+            state = [ -86.660156, 35.860119];
+            state_name = 'Tennessee';
+            average = 1819;
+            colNum = 89.9;
+            myfetchFunc(state_name)
+                .then(r => createMap(state, zoom, array));
+            break;
+        case 'Texas':
+            state = [ -100.000000, 31.000000];
+            state_name = 'Texas';
+            average = 1474;
+            colNum = 94.2;
+            myfetchFunc(state_name)
+                .then(r => createMap(state, zoom, array));
+            break;
+        case 'Utah':
+            state = [ -111.950684, 39.419220];
+            state_name = 'Utah';
+            average = 1771;
+            colNum = 114.2;
+            myfetchFunc(state_name)
+                .then(r => createMap(state, zoom, array));
+            break;
+        case 'Vermont':
+            state = [ -72.699997, 44.000000];
+            state_name = 'Vermont';
+            average = 1875;
+            colNum = 100.8;
+            myfetchFunc(state_name)
+                .then(r => createMap(state, zoom, array));
+            break;
+        case 'Virginia':
+            state = [ -78.024902, 37.926868];
+            state_name = 'Virginia';
+            average = 1950;
+            colNum = 104.2;
+            myfetchFunc(state_name)
+                .then(r => createMap(state, zoom, array));
+            break;
+        case 'Washington':
+            state = [ -120.740135, 47.751076];
+            state_name = 'Washington';
+            average = 2335;
+            colNum = 121.9;
+            myfetchFunc(state_name)
+                .then(r => createMap(state, zoom, array));
+            break;
+        case 'West Virginia':
+            state = [ -80.500000, 39.000000];
+            state_name = 'West Virginia';
+            average = 589;
+            colNum = 78.1;
+            myfetchFunc(state_name)
+                .then(r => createMap(state, zoom, array));
+            break;
+        case 'Wisconsin':
+            state = [ -89.500000, 44.500000];
+            state_name = 'Wisconsin';
+            average = 1069;
+            colNum = 93.9;
+            myfetchFunc(state_name)
+                .then(r => createMap(state, zoom, array));
+            break;
+        case 'Wyoming':
+            state = [ -107.290283, 43.075970];
+            state_name = 'Wyoming';
+            average = 1213;
+            colNum = 91.66;
             myfetchFunc(state_name)
                 .then(r => createMap(state, zoom, array));
             break;
@@ -213,21 +565,28 @@ async function myfetchFunc2(state_name,colNum){//gets average job salary with ap
             $('#pop').toggle();
         });
     });
+    let state = document.getElementById('inputField2').value;
 
-    let response = await fetch('https://infosalary.p.rapidapi.com/?job_title='+fieldValue+'', {
+    let response = await fetch('https://job-salary-data.p.rapidapi.com/job-salary?job_title='+fieldValue+'&location='+state+'%2C%20usa&radius=200', {
         "method": "GET",
         "headers": {
-            "x-rapidapi-host": "infosalary.p.rapidapi.com",
-            "x-rapidapi-key": "8f659a7208msh9a4f254921a1fd3p17ad36jsn36a7ab4083cb"
+            'X-RapidAPI-Key': 'd3e79ff2c3msh4c778478623b817p183fcajsn482b1b5f8b42',
+            'X-RapidAPI-Host': 'job-salary-data.p.rapidapi.com'
         }
     })
         .then(response => response.json())
-        .then(data=>  average_salary = data.info[0].average)
+        .then(data=>  average_salary = data.data[0].median_salary)
         .catch(err => {
             console.error(err);
         });
     if(average_salary != null){
-    document.getElementById('avgsalarayHTML').innerText = numberWithCommas(average_salary);
+        let n = new String(average_salary);
+        if(n[0] == '1'){
+        n = n.substring(0,3)+"k";
+        }else{
+            n = n.substring(0,2)+"k";
+        }
+    document.getElementById('avgsalarayHTML').innerText = n;
     }else{
         document.getElementById('avgsalarayHTML').innerText = 'N/A';
     }

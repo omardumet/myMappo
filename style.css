@@ -55,8 +55,13 @@ body{
     border-radius: 10px;
     margin: 10px 0;
 }
-#inputField,#inputField2:focus {
 
+#inputField2{
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    width: auto;
+}
+#inputField,#inputField2:focus {
     box-shadow: 0 1px 0 0 rgb(35 38 59 / 3%);
 }
 
@@ -122,6 +127,7 @@ body{
 .menuFlex-container div{
     margin: 5px 0;
 }
+
 
 .dataContainerMain{
     display: flex;
